@@ -1,4 +1,10 @@
 package top.kengtion.lib.dsapi
 
-class DSApi {
+import top.kengtion.lib.dsapi.api.DSAuthApi
+import top.kengtion.lib.dsapi.api.DSAuthApiImpl
+
+object DSApi {
+    fun getAuthAPi():DSAuthApi{
+         return DSAuthApiImpl
+    }
 }
